@@ -2,17 +2,17 @@
 <head> 
 <script type="text/javascript"> 
 function add() { 
-var text1_val = parseInt(document.getElementById('text1').value);//¨ú±otext1Äæ¦ìªº­È 
-var rate_val = parseFloat(document.getElementById('rate').value);//¨ú±otext1Äæ¦ìªº­È
-//¹Bºâ¦¡ 
+var text1_val = parseInt(document.getElementById('text1').value);//å–å¾—text1æ¬„ä½çš„å€¼ 
+var rate_val = parseFloat(document.getElementById('rate').value);//å–å¾—text1æ¬„ä½çš„å€¼
+//é‹ç®—å¼  
 var value = text1_val/rate_val; 
-document.getElementById('text2').value=value;//¹Bºâ«á¸ê®Æ©ñ¨ìtext2Äæ¦ì 
+document.getElementById('text2').value=value;//é‹ç®—å¾Œè³‡æ–™æ”¾åˆ°text2æ¬„ä½ 
 } 
 </script> 
 </head> 
 
 <body> 
-¥H¶×²v: <input type="text" id="rate" value="3.717472118959108"/>­pºâ<br><br> 
+ä»¥åŒ¯ç‡: <input type="text" id="rate" value="3.717472118959108"/>è¨ˆç®—<br><br> 
 TWD: <input type="text" id="text1" onchange="add()" onkeydown="if (event.keyCode == 13) add()"/><br><br> 
 HKD: <input type="text" id="text2" /><br> 
 <br><br> 

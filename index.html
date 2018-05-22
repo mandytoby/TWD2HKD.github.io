@@ -1,2 +1,26 @@
+<html> 
+<head> 
+<script type="text/javascript"> 
+function add() { 
+var text1_val = parseInt(document.getElementById('text1').value);//���otext1��쪺�� 
+var rate_val = parseFloat(document.getElementById('rate').value);//���otext1��쪺��
+//�B�⦡ 
+var value = text1_val/rate_val; 
+document.getElementById('text2').value=value;//�B����Ʃ��text2��� 
+} 
+</script> 
+</head> 
+
+<body> 
+�H�ײv: <input type="text" id="rate" value="3.717472118959108"/>�p��<br><br> 
+TWD: <input type="text" id="text1" onchange="add()" onkeydown="if (event.keyCode == 13) add()"/><br><br> 
 HKD: <input type="text" id="text2" /><br> 
+<br><br> 
+<table border="1" width="100%">
   <tr>
+    <th width="50%" align="center">TWD</th>
+    <th width="50%" align="center">HKD</th>
+  </tr>
+  <tr>
+    <td width="50%" align="center">10</td>
+    <td width="50%" align="center">2.7</td>
